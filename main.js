@@ -7,7 +7,7 @@ function menuResponsivo() {
 }
 
 $('.fullBackground').fullClip({
-  images: ['img/house.jpg', 'img/road.jpg', 'img/winter.jpg'],
+  images: ['house.jpg', 'road.jpg', 'winter.jpg'],
   transitionTime: 2000,
   wait: 5000
 });
