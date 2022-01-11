@@ -1,4 +1,5 @@
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,16 +11,14 @@
 button {
     border: none;
     background-color: rgba(255, 255, 255, 0)
+    
 }
 
 header {
-    margin-top: 50px;
-}
-
-nav {
-    position: relative;
-    left: 15px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
 a {
@@ -37,7 +36,7 @@ body {
     overflow-x: hidden;
 }
 
-.fullBackground {
+.fullBackground { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,8 +81,9 @@ body {
 
 #menuMobile {
     position: relative;
-    left: 100px;
-    top: 24px;
+    bottom: 50px;
+    left: 650px;
+    width: 32px;
     height: 35px;
     cursor: pointer;
 }
@@ -95,10 +95,6 @@ body {
     background-color: white;
 }
 
-.box-logo {
-    width: 100%;
-}
-
 .logo {
     font-family: BodoniFLFRoman;
     src: url('BodoniFLFRoman ttf');
@@ -106,15 +102,17 @@ body {
 }
 
 .nave {
-    justify-content: center;
+    position: relative;
+    bottom: 17px;
     color: white;
-    display: flex;
+    display: flex
 }
 
 .nave li {
     display: flex;
     flex-direction: column;
-    margin: 1%; 
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
     list-style: none;
     align-items: center;
 }
@@ -154,6 +152,7 @@ body {
     background: #23232e;
     transition: transform 0.3s ease-in;
     transform: translateX(103%);
+    z-index: 100;
   }
 
 #navList.active {
@@ -196,4 +195,52 @@ body {
 
 #navList button {
     margin: 8%;
+}
+
+@media (max-width: 850px) {
+
+    #menuMobile {
+        left: 570px;
+    }
+}
+
+@media (max-width: 670px) {
+
+    #menuMobile {
+        bottom: 40px;
+        left: 470px;
+        width: 22px;
+        height: 25px;
+    }
+
+    #menuMobile div {
+        margin: 7px 0px;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    #menuMobile {
+        bottom: 40px;
+        left: 380px;
+        width: 22px;
+        height: 25px;
+    }
+
+    #menuMobile div {
+        margin: 7px 0px;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
 }
