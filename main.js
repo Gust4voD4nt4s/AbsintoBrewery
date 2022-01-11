@@ -7,10 +7,21 @@ function menuResponsivo() {
 }
 
 $('.fullBackground').fullClip({
-  images: ['house.jpg', 'road.jpg', 'winter.jpg'],
+  images: ['drink1.jpg', 'picanha-na-brasa.jpg', 'drink3.jpg'],
   transitionTime: 2000,
   wait: 5000
 });
 
+$('.slider-principal').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  adaptiveHeight: false,
+  autoplay: true,
+  autoplaySpeed: 2000
+})
+
+
 MENUMOBILE.addEventListener('click', menuResponsivo);
 cancelmenu.addEventListener('click', menuResponsivo);
+ 
