@@ -44,17 +44,20 @@ button.slick-prev {
     height: 30px;
     -webkit-transform: rotateZ(180deg);
     position: relative;
-}
-
-button.slick-prev:focus {
-    outline: 0px
-}
-
-button.slick-next:focus {
-    outline: 0px
+    top: 150px;
+    z-index: 99;
 }
 
 button.slick-next {
+    font-size: 0;
+    background-image: url(next.png);
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 130px;
+    left: 480px;
+    z-index: 99;
 }
 
 .fullBackground { 
@@ -251,6 +254,7 @@ button.slick-next {
 }
 
 @media (max-width: 560px) {
+
     .Home {
         width: 100%;
     }
@@ -262,9 +266,15 @@ button.slick-next {
     .logo {
         font-size: 40px;
     }
+
+
 }
 
 @media (max-width: 470px) {
+
+    button.slick-next {
+        left: 380px;
+    }
 
     .Home img {
         width: 100%;
@@ -299,6 +309,10 @@ button.slick-next {
 
 @media (max-width: 424px) {
 
+    button.slick-next {
+        left: 350px;
+    }
+
     header {
         margin-right: 24px;
     }
@@ -319,6 +333,11 @@ button.slick-next {
 }
 
 @media (max-width: 360px) {
+
+    button.slick-next {
+        left: 320px;
+    }
+
     .nave li {
         margin-right: 0.5rem;
         margin-left: 0.5rem;
