@@ -182,7 +182,7 @@ button.slick-next {
     background: #23232e;
     transition: transform 0.3s ease-in;
     transform: translateX(103%);
-    z-index: 100;
+    z-index: 10;
   }
 
 #navList.active {
