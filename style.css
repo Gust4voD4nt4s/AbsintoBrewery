@@ -11,7 +11,6 @@
 button {
     border: none;
     background-color: rgba(255, 255, 255, 0)
-    
 }
 
 header {
@@ -225,6 +224,62 @@ button.slick-next {
 
 #navList button {
     margin: 8%;
+}
+
+
+.calendar-container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    border-right: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonReserva {
+    background-color: rgb(207, 37, 24);
+    border-radius: 5px;
+    padding: 1% 5%;
+    border: solid 2px black;
+    cursor: pointer;
+    color: white;
+}
+
+.dycalendar-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.dycalendar-container table {
+    margin-top: 40px;
+    width: 100%;
+    border-spacing: 5px;
+}
+
+.dycalendar-container table tr:nth-child(1) td {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.dycalendar-container table td {
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+}
+
+.dycalendar-container table td:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    padding: 20px;
 }
 
 @media (max-width: 850px) {

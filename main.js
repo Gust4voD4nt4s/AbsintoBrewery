@@ -1,3 +1,5 @@
+
+
 const MENUMOBILE = document.getElementById('menuMobile');
 const cancelmenu = document.getElementById('cancelmenuMobile');
 
@@ -15,6 +17,7 @@ $('.fullBackground').fullClip({
   wait: 5000
 });
 
+
 $('.slider-principal').slick({
   dots: false,
   infinite: true,
@@ -23,4 +26,3 @@ $('.slider-principal').slick({
   autoplay: true,
   autoplaySpeed: 2000
 })
- 
