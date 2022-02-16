@@ -42,15 +42,52 @@
                         <li> <a href="Home.html"><img src="casa (2).png" alt="">Home</a></li>
                         <li> <a href="Cardapio.html"> <img src="restaurant.png" alt="">Cardapio</a></li>
                         <li> <a href="Reserva.html"> <img class="icones" src="relogio (1).png" alt="">Reserva</a></li>
-                        <li> <a href="=#"> <img class="icones" src="chamada-telefonica (3).png" alt="">Contato</a></li>
+                        <li> <a href="Contato.html"> <img class="icones" src="chamada-telefonica (3).png" alt="">Contato</a></li>
                         <li> <a href="#"> <img class="icones" src="localizacao (1).png" alt="">Local</a></li>
                         <li> <a href="#"> <img class="icones" src="localizacao (2).png" alt="">Eventos</a></li>
                     </ul>
                 </div>
             </header>
-            <div class="calendar-container">
-                <div id="dycalendar-month" class="dycalendar-container"></div>
-            </div>
+            <form action="">
+                <div class="nome">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="" id="name"/>
+                </div>
+                <div>
+                    <h2>Data da Reserva</h2>
+                    <div class="calendar-container">
+                        <div id="dycalendar-month" class="dycalendar-container"></div>
+                    </div>
+                </div>
+                <h2>Pessoas</h2>
+                <div class="pessoas">  
+                    <button><img src="do-utilizador.png" alt="">1 pessoa</button>
+                    <button><img src="do-utilizador.png" alt="">2 pessoa</button>
+                    <button><img src="do-utilizador.png" alt="">3 pessoa</button>
+                    <button><img src="do-utilizador.png" alt="">4 pessoa</button>
+                </div>
+                <div>
+                    <h2>Horario</h2>
+                    <select name="" id="Horario">
+                        <option selected disabled value="">Selecione</option>
+                    <option>8:00 - 8:30</option>
+                    <option>9:00 - 9:30</option>
+                    <option>10:00 - 10:30</option>
+                    <option>11:00 - 11:30</option>
+                    <option>12:00 - 12:30</option>
+                    <option>13:00 - 13:30</option>
+                    <option>14:00 - 14:30</option>
+                    <option>15:00 - 15:30</option>
+                    <option>16:00 - 16:30</option>
+                    <option>17:00 - 17:30</option>
+                    <option>18:00 - 18:30</option>
+                    </select>
+                    
+                </div>
+            </form>
+
+            
+
             <button class="ButtonReserva">Fazer Reserva</button>
         </div>
     </section>
